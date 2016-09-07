@@ -1,10 +1,10 @@
 
 //PLEASE WAIT
-function pleaseWait(pathToGiph, infoAreaId, imageStyleString, messsageStyleString, message){
+function pleaseWait(pathToGif, infoAreaId, imageStyleString, messsageStyleString, message){
 
     //param check
 
-    if(pathToGiph.length > 0 && infoAreaId.length > 0){
+    if(pathToGif.length > 0 && infoAreaId.length > 0){
 
         //assign variables
         var area = '#' + infoAreaId;
@@ -23,7 +23,7 @@ function pleaseWait(pathToGiph, infoAreaId, imageStyleString, messsageStyleStrin
 
         //add please wait
         $(area).html(
-            "<img src = '" + pathToGiph + "' style='"+ imageStyle +"'/>" +
+            "<img src = '" + pathToGif + "' style='"+ imageStyle +"'/>" +
             "<p style= '" + messageStyle + "'>" + message + "</p>"
         );
     }
